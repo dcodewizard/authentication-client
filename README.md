@@ -2,6 +2,10 @@
 
 This project is a user authentication module developed using the React framework. It includes sign-up and sign-in pages, as well as an application page. The design elements have been creatively implemented to provide an engaging user experience. 
 
+![Screenshot 1](/public/images/screenshot1.png)
+![Screenshot 1](/public/images/screenshot2.png)
+![Screenshot 1](/public/images/screenshot3.png)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
@@ -15,8 +19,18 @@ This project is a user authentication module developed using the React framework
 
 To get started with this user authentication module, follow these steps:
 
-- Clone the repository.
-- Naviagte to project directory.
+### Prerequesties
+
+Before you begin, make sure you have the following software installed on your computer:
+
+- Node.js
+- npm
+
+### Installation
+
+- Clone the repository with git clone (https://github.com/yourusername/user-authentication-module.git).
+- Navigate to the rpoject directory.
+- Install all the depencies with npm install.
 - Start server with npm start.
 
 ## Signup
