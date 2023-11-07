@@ -2,9 +2,9 @@
 
 This project is a user authentication module developed using the React framework. It includes sign-up and sign-in pages, as well as an application page. The design elements have been creatively implemented to provide an engaging user experience. 
 
-![Screenshot 1](/public/images/Screenshot 1.png)
-![Screenshot 1](/public/images/Screenshot 2.png)
-![Screenshot 1](/public/images/Screenshot 3.png)
+![Screenshot 1](/public/images/Screenshot1.png)
+![Screenshot 1](/public/images/Screenshot2.png)
+![Screenshot 1](/public/images/Screenshot3.png)
 
 ## Table of Contents
 
