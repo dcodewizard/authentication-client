@@ -1,30 +1,52 @@
-## Available Scripts
+# Authetication Module
 
-In the project directory, you can run:
+This project is a user authentication module developed using the React framework. It includes sign-up and sign-in pages, as well as an application page. The design elements have been creatively implemented to provide an engaging user experience. 
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Signup](#signup)
+- [Signin](#signin)
+- [Password Requirements](#password-requirement)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get started with this user authentication module, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone the repository.
+- Naviagte to project directory.
+- Start server with npm start.
 
-### `npm run build`
+## Signup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The sign-up page features a user registration form with the following fields:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Email
+- Name
+- Password
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Upon successful sign-up, users are automatically redirected to the application page.
 
-### `npm run eject`
+## Signin
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The sign-in page includes a form with fields for:
+
+- Email
+- Password
+
+Users can sign in with their registered email and password.
+
+## Password Requirements
+
+The password for user registration must meet the following criteria:
+
+- Minimum length of 8 characters
+- Contains at least 1 letter
+- Contains at least 1 number
+- Contains at least 1 special character
+
+This ensures that user passwords are secure and meet minimum security standards.
+
+Please note that this project can be further enhanced with additional modules or libraries, including design frameworks, to tailor it to your specific needs. Enjoy using this user authentication module for your application!

@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import './SignInForm.scss';
-import { signIn } from '../api/api';
+import { signIn } from '../../api/api';
+import { useAuth } from '../providers/Authprovider';
 import { useNavigate } from 'react-router-dom';
 
-function SignInForm({ setIsAuthenticated }) {
+function SignInForm() {
+  const navigate = useNavigate();
+  const { login, errorHandler, Loader, error, isLoading} = useAuth();
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
 
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,24 +19,17 @@ function SignInForm({ setIsAuthenticated }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
-    setError('');
+    Loader(true);
 
     try {
       const response = await signIn(formData);
-
-      if (response) {
-        console.log('Sign-in successful:', response);
-        setIsAuthenticated(true);
-        navigate('/application');
-      } else {
-        setError('Sign-in failed. Please check your credentials.');
-      }
+      console.log('Sign-in successful:', response);
+      await login(); // Call the login function from the context to set isAuthenticated to true
+      navigate('/application');
     } catch (error) {
-      console.error('Sign-in failed:', error);
-      setError('Sign-in failed. Please check your credentials.');
+      errorHandler('login Failed')
     } finally {
-      setIsLoading(false);
+      Loader(false);
     }
   }
 

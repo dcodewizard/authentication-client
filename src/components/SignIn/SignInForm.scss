@@ -1,12 +1,24 @@
-.signin-container {
-  background: #b6ad6e;
+body {
+  background: #94889d28;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Horizontally centered */
+  align-items: center; /* Vertically centered */
   height: 100vh;
   margin: 0;
   overflow: hidden;
   animation: unicorn 10s infinite;
+}
+
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
 @keyframes unicorn {
@@ -21,7 +33,7 @@
   }
 }
 
-.signin-container {
+.user-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +76,7 @@
 
 .custom-button {
   padding: 10px;
-  background-color: #b78d3d;
+  background-color: #7e0a8a;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -81,7 +93,7 @@
 }
 
 .custom-button:hover {
-  background-color: #FFD700;
+  background-color: #391338;
 }
 
 @keyframes pulse {

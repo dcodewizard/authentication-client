@@ -1,14 +1,4 @@
 .signup-container {
-  background: #FAD02E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
-
-.signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +41,7 @@
 
 .custom-button {
   padding: 10px;
-  background-color: #FF6347;
+  background-color: #7e0a8a;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -66,5 +56,5 @@
 }
 
 .custom-button:hover {
-  background-color: #FF4500;
+  background-color: #391338;;
 }

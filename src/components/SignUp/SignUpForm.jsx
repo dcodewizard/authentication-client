@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import './SignUpForm.scss';
-import { signUp } from '../api/api';
+import { signUp } from '../../api/api';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../providers/Authprovider';
 
-function SignUpForm({ setIsAuthenticated }) {
+function SignUpForm() {
+  const navigate = useNavigate();
+  const { login, errorHandler, Loader, error, isLoading} = useAuth();
   const [formData, setFormData] = useState({
     email: '',
     name: '',
     password: '',
   });
-
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -25,25 +24,24 @@ function SignUpForm({ setIsAuthenticated }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
-    setError('');
+    Loader(true);
 
     if (!isPasswordValid(formData.password)) {
-      setError('Password must be at least 8 characters long and include at least 1 letter, 1 number, and 1 special character.');
-      setIsLoading(false);
+      errorHandler('Password must be at least 8 characters long and include at least 1 letter, 1 number, and 1 special character.');
+      Loader(false);
       return;
     }
 
     try {
       const response = await signUp(formData);
       console.log('Sign-up successful:', response);
-      setIsAuthenticated(true);
+      await login();
       navigate('/application');
     } catch (error) {
       console.error('Sign-up failed:', error);
-      setError('Sign-up failed. Please enter the correct information.');
+      errorHandler('login Failed')
     } finally {
-      setIsLoading(false);
+      Loader(false);
     }
   };
 

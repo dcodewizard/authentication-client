@@ -1,0 +1,41 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #8a2be2; /* Purple tone */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .not-found-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-funny {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .sign-in-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a1e94; /* Darker purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in-link:hover {
+    background-color: #4e176d; /* Lighter purple on hover */
+  }
+  
