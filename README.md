@@ -30,7 +30,7 @@ Before you begin, make sure you have the following software installed on your co
 
 ### Installation
 
-- Clone the repository with git clone (https://github.com/yourusername/user-authentication-module.git).
+- Clone the repository with git clone (https://github.com/dcodewizard/authentication-client.git).
 - Navigate to the project directory.
 - Install all the dependencies with npm install.
 - Start server with npm start.
