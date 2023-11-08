@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ApplicationPage() {
+const ApplicationPage = () => {
   return (
     <div>
       <h1>Welcome to the application</h1>

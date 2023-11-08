@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './NotFound.scss';
 
-export function NotFound() {
+const NotFound = () => {
   return (
     <div className="not-found-container">
       <p className="not-found-message">Oops! This page seems to have gone on vacation.</p>
@@ -11,3 +11,5 @@ export function NotFound() {
     </div>
   );
 }
+
+export default NotFound;

@@ -2,11 +2,11 @@ import React, { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
 
-export function useAuth() {
+export const useAuth = () => {
   return useContext(AuthContext);
 }
 
-export function AuthProvider({ children }) {
+export const AuthProvider = ({ children })  => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -21,7 +21,6 @@ export function AuthProvider({ children }) {
   };
 
   const errorHandler = (error) => {
-    // Implementing the error handling
     setError(error);
   };
 
