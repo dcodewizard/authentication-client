@@ -13,9 +13,10 @@ This project is a user authentication module developed using the React framework
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Signup](#signup)
-- [Signin](#signin)
-- [Password Requirements](#password-requirement)
+- [Features](#features)
+  - [Signup](#signup) 
+  - [Signin](#signin)
+- [Accessing the Frontend](accessing-the-frontend)
 
 ## Getting Started
 
@@ -25,17 +26,29 @@ To get started with this user authentication module, follow these steps:
 
 Before you begin, make sure you have the following software installed on your computer:
 
-- Node.js
-- npm
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
 ### Installation
 
-- Clone the repository with git clone (https://github.com/dcodewizard/authentication-client.git).
-- Navigate to the project directory.
-- Install all the dependencies with npm install.
-- Start server with npm start.
+1. Clone the repository:
 
-## Signup
+   ```bash
+   git clone https://github.com/dcodewizard/authentication-client.git
+   cd auth-app
+   ```
+
+2. Build and start the server:
+
+   ```bash
+   npm i
+   npm start
+   ```
+## Features
+
+Following are the main features of the application:
+
+### Signup
 
 The sign-up page features a user registration form with the following fields:
 
@@ -45,7 +58,7 @@ The sign-up page features a user registration form with the following fields:
 
 Upon successful sign-up, users are automatically redirected to the application page.
 
-## Signin
+### Signin
 
 The sign-in page includes a form with fields for:
 
@@ -54,15 +67,8 @@ The sign-in page includes a form with fields for:
 
 Users can sign in with their registered email and password.
 
-## Password Requirements
+### Accessing the frontend
 
-The password for user registration must meet the following criteria:
-
-- Minimum length of 8 characters
-- Contains at least 1 letter
-- Contains at least 1 number
-- Contains at least 1 special character
-
-This ensures that user passwords are secure and meet minimum security standards.
+After successfully running the project, you can access the frontend by opening your web browser and navigating to [http://localhost:3000](http://localhost:3000). This is where you can interact with the user-friendly interface for resistration and loggin in.
 
 Please note that this project can be further enhanced with additional modules or libraries, including design frameworks, to tailor it to your specific needs. Enjoy using this user authentication module for your application!
